@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.2;
+}
+
+/* Utility */
+
+.hide-on-small {
+  display: none;
+}
+
+.l-header {
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+#navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  /* position: fixed; */
+  height: 60px;
+}
+
+#navbar h1.logo {
+  padding-left: 0.5rem;
+  margin-top: 0.2rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--overlay-color);
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+#navbar #toggler {
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 14px;
+  width: 1.3rem;
+  height: 1.3rem;
+  opacity: 0;
+}
+
+#navbar #toggler:checked ~ ul li a {
+  background: rgba(0, 0, 0, 0.6);
+  visibility: visible;
+  opacity: 1;
+  border-bottom: 1px #ddd solid;
+}
+
+#navbar .menu {
+  display: inline-block;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 21px;
+  right: 16px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  padding: 0;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar ul li {
+  display: block;
+  height: auto;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#navbar ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  height: 50px;
+  /* width: 370px; */
+  overflow-y: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#navbar li.fade {
+  opacity: 0;
+}
+
+/* Showcase */
+
+#showcase {
+  background: url("../img/mbg.jpg") center center/cover;
+  text-align: center;
+  position: relative;
+}
+
+#showcase .showcase-header {
+  font-size: 2.3rem;
+}
+
+#showcase:before {
+  content: "";
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--navbar-color);
+}
+
+/* Gallery */
+
+#gallery .image-gallery {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-count: 1;
+  width: 85%;
+}
+#gallery .category {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#gallery .category span {
+  padding: 0.7rem;
+  font-size: 1.1rem;
+}
+
+/* Contact form */
+
+#contact {
+  padding: 0;
+}
+
+#contact .form-container {
+  margin: 0 10px;
+}
+
+#contact .form-wrap {
+  margin: 1rem 0;
+  width: 90%;
+}
+
+#contact .form-container h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+#contact .form-wrap .form-group input {
+  height: 30px;
+}
+
+#contact .form-wrap .form-group textarea {
+  height: 15vh;
+}
+
+/* Social */
+
+#social {
+  margin: 0;
+  padding: 0;
+}
+
+#social p {
+  display: none;
+}
+
+#social .facebook i {
+  padding: 0 4px;
+  text-align: center;
+}
+
+#social .facebook,
+#social .instagram {
+  border-radius: 50px;
+}
+
+#social .facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+#social .instagram {
+  background: linear-gradient(to right, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+  color: #fff;
+}
+
+#contact .btn-form {
+  font-size: 1.1rem;
+}
+
+#success h1 {
+  margin: 0 auto;
+}
+
+@media (min-width: 400px) {
+  #navbar ul li a {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 600px) {
+  #navbar ul li a {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #contact .form-wrap .form-group textarea {
+    height: 10vh;
+  }
+
+  #social p {
+    display: inline-block;
+  }
+
+  #social .facebook,
+  #social .instagram {
+    border-radius: 20px;
+  }
+}
