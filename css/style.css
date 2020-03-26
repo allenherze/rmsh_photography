@@ -111,17 +111,21 @@ a {
   color: #fff;
   background: var(--navbar-color);
   display: flex;
-  position: sticky;
   top: 0;
   justify-content: space-between;
   padding: 1rem;
   z-index: 1;
+  height: 55px;
 }
 
 #navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
+}
+
+#navbar .logo {
+  align-self: center;
 }
 
 #navbar ul li a {
@@ -211,6 +215,10 @@ a {
   background: var(--secondary-color);
   border-radius: 50px;
   margin: 0 0.5rem;
+}
+
+#gallery .category span:nth-child() {
+  background: #f4f4ff;
 }
 
 /* About section */
