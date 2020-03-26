@@ -217,8 +217,12 @@ a {
   margin: 0 0.5rem;
 }
 
-#gallery .category span:nth-child() {
-  background: #f4f4ff;
+#gallery .category span:nth-child(even) {
+  background: var(--secondary-color);
+}
+
+#gallery .category span:nth-child(odd) {
+  background: var(--overlay-color);
 }
 
 /* About section */
