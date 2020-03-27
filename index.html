@@ -7,13 +7,13 @@
     <meta name="keywords" content="mumbai, photography, street photograpy, landscape, kalyan, mumbai, bombay, art" />
     <meta name="description" content="Aspiring Photog, I do photoshoots for modelling, wedding and nature"">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="../css/moblie.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/moblie.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Ramesh Mudaliar | Welcome</title>
   </head>
   <body id="home">
-    <!-- Navigation -->
+    <!-- Navigation for Desktop -->
     <nav id="navbar">
       <h1 class="logo">RMSH Photography</h1>
       <i class="fa fa-bars menu"></i><input type="checkbox" id="toggler" />
@@ -96,19 +96,18 @@
             <img src="./img/snips/image-16.jpg" class="img16" alt="img-16" />
           </div>
           <div class="gallery-image" data-id="landscape">
-              <img src="./img/snips/image-17.jpg" class="img17" alt="img-17" />
-            </a>
+            <img src="./img/snips/image-17.jpg" class="img17" alt="img-17" />
           </div>
           <div class="gallery-image" data-id="still-life">
             <img src="./img/snips/image-18.jpg" class="img18" alt="img-18" />
           </div>
-          <div class="gallery-image" data-id="still-life">  
-              <img src="./img/snips/image-19.jpg" class="img19" alt="img-19" />
+          <div class="gallery-image" data-id="still-life">
+            <img src="./img/snips/image-19.jpg" class="img19" alt="img-19" />
           </div>
           <div class="gallery-image" data-id="fine-art">
             <img src="./img/snips/image-20.jpg" class="img20" alt="img-20" />
           </div>
-          <div class="gallery-image" data-id ="landscape">
+          <div class="gallery-image" data-id="landscape">
             <img src="./img/snips/image-21.jpg" class="img20" alt="img-21" />
           </div>
           <div class="gallery-image" data-id="still-life">
@@ -131,7 +130,7 @@
     <section id="social">
       <div class="facebook">
         <a href="http://www.facebook.com/ramesh.mudaliyar.7" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-        <p class="social-text">Facebook</p>
+        <p class="social-text"></p>
       </div>
       <div class="instagram">
         <a href="http://www.instagram.com/rmshxx/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
@@ -144,7 +143,7 @@
         <div class="form-wrap">
           <h2>Contact Form</h2>
           <p>For your business inquires, please fill out the form below.</p>
-          <form name="contact" method="POST" data-netlify="true">
+          <form action="process.php" method="POST">
             <div class="form-group">
               <label for="first-name">First Name</label>
               <input type="text" name="firstName" id="first-name" />

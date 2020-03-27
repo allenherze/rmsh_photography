@@ -111,21 +111,17 @@ a {
   color: #fff;
   background: var(--navbar-color);
   display: flex;
+  position: sticky;
   top: 0;
   justify-content: space-between;
   padding: 1rem;
   z-index: 1;
-  height: 55px;
 }
 
 #navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-#navbar .logo {
-  align-self: center;
 }
 
 #navbar ul li a {
@@ -193,11 +189,6 @@ a {
   padding-bottom: 1.5rem;
 }
 
-#gallery .image-gallery img {
-  width: 100% !important;
-  height: auto !important;
-}
-
 #gallery .category {
   display: flex;
   align-items: center;
@@ -223,6 +214,11 @@ a {
 
 #gallery .category span:nth-child(odd) {
   background: var(--overlay-color);
+}
+
+#gallery .image-gallery img {
+  width: 100% !important;
+  height: auto !important;
 }
 
 /* About section */

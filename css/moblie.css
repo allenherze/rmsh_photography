@@ -62,7 +62,6 @@ body {
   background: rgba(0, 0, 0, 0.6);
   visibility: visible;
   opacity: 1;
-  border-bottom: 1px #ddd solid;
 }
 
 #navbar .menu {
@@ -140,6 +139,7 @@ body {
   column-count: 1;
   width: 85%;
 }
+
 #gallery .category {
   display: grid;
   grid-template-columns: 2fr 2fr;
