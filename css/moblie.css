@@ -199,6 +199,7 @@ body {
 #social .facebook,
 #social .instagram {
   border-radius: 50px;
+  padding: 5px;
 }
 
 #social .facebook {
