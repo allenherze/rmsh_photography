@@ -1,0 +1,64 @@
+.container {
+  width: $website-width;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: auto;
+}
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.7;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.medium {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+%btn-shared {
+  display: inline-block;
+  background: $light-color;
+  color: #333;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  font-weight: 700;
+}
+
+.btn {
+  &-primary {
+    @include set-background($primary-color);
+    @extend %btn-shared;
+  }
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

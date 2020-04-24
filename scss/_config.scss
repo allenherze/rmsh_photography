@@ -1,0 +1,24 @@
+// Variables
+
+$primary-color: #fed136;
+$secondary-color: #f4f4f4;
+$light-color: #fff;
+$dark-color: #333;
+$website-width: 1100px;
+
+// Function to set text color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Background color mixin
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
