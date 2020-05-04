@@ -1,5 +1,5 @@
 .container {
-  width: $website-width;
+  max-width: $website-width;
   margin: auto;
   padding: 0 2rem;
   overflow: auto;
@@ -61,4 +61,9 @@
 
 .text-center {
   text-align: center;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
 }

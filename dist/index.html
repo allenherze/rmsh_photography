@@ -15,11 +15,12 @@
   <body>
     <!-- Navigation Bar -->
 
-    <nav id="navbar">
-      <span class="navbar-toggle btn-primary" id="js-navbar-toggle">Menu <i class="fas fa-bars"></i></span>
-      <img src="" alt="logo.png" class="logo" />
+    <nav id="navbar" class="nav">
+      <span class="navbar-toggle btn-primary" id="js-navbar-toggle">Menu<i class="fas fa-bars"></i></span>
+      <img src="./img/logo.png" alt="logo.png" class="logo" />
+      <span class="logo-small">Ramesh Mudaliar <i class="fas fa-camera-retro"></i></span>
       <ul class="main-nav" id="js-menu">
-        <li>
+        <li class="nav-links">
           <a href="#services">Services</a>
         </li>
         <li>
@@ -52,7 +53,7 @@
         <div class="service">
           <div class="card">
             <img src="./img/grid-img/photo.png" alt="" />
-            <h3>Full Day / Half Day Photoshoots</h3>
+            <h3>Mobile Photography</h3>
           </div>
           <div class="card">
             <img src="./img/grid-img/photo1.png" alt="" />
@@ -60,7 +61,7 @@
           </div>
           <div class="card">
             <img src="./img/grid-img/photo2.png" alt="" />
-            <h3>Professional Camera and Lighting Kits</h3>
+            <h3>Video Content Creation</h3>
           </div>
         </div>
       </div>
@@ -254,6 +255,51 @@
       </div>
     </section>
 
+    <!-- Section : About Me -->
+
+    <section id="about" class="py-3">
+      <div class="container">
+        <h2 class="large text-center">About Me</h2>
+        <div class="about-info">
+          <img src="./img/snips/self.jpg" alt="" srcset="" />
+          <p class="lead">Thank you for checking out my website. I'm from Mumbai, An amateur photographer I use photography to make stories in my way. My work is mainly based around colours and nature.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-4">
+      <div class="container">
+        <h2 class="large text-center">Contact Me</h2>
+        <p class="lead text-center">Want to be in touch, fill out the form below and I'll get back to you</p>
+        <form action="">
+          <div class="form-container">
+            <div class="form-group">
+              <input type="text" name="name" id="" placeholder="Your Name *" />
+              <input type="text" name="phone" id="" placeholder="Your Phone No *" />
+              <input type="text" name="email" id="" placeholder="Your Email *" />
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="60" rows="15" placeholder="Leave a Message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="footer footer-content">
+        <div>
+          <p>Copyright &copy; All Rights Reserved</p>
+          <p>Designed By JCRM Media Limited</p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/ramesh.mudaliyar.7" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
     <!-- Lightbox plugin from femosi "https://github.com/femosi" -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script>
@@ -261,7 +307,6 @@
         baguetteBox.run('.gallery');
       });
     </script>
-
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
