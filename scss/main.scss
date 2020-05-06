@@ -49,6 +49,7 @@ img {
   width: 100%;
   height: 4.5rem;
   color: #fff;
+  // background: $dark-color;
   z-index: 1;
 
   .navbar-toggle {
@@ -70,11 +71,19 @@ img {
   .logo {
     display: inline;
     width: 200px;
-    height: auto;
+    height: 170px;
     margin-top: 1rem;
   }
 
   .logo-small {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .close {
     display: none;
   }
 }
