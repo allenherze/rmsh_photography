@@ -10,3 +10,7 @@ navBtn.addEventListener('click', function openMenu() {
 closeBtn.addEventListener('click', function closeMenu() {
   mainNav.style.visibility = 'hidden';
 });
+
+document.addEventListener('scroll', function navDark() {
+  navBar.classList.add('bg-dark');
+});
