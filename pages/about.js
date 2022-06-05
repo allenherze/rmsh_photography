@@ -20,7 +20,7 @@ const about = () => {
           <div className={aboutStyles.aboutContent}>
             <h1 className={aboutStyles.header}>Who we are? and What do we do?</h1>
             <p className={aboutStyles.description}>
-              Thank you for taking the time to visit our website. We are amateur photographers based in Mumbai who use photography to tell stories in our own unique way. <br />
+              Thank you for taking the time to visit our website. We are based in Mumbai who use photography, design and animation to tell stories in our own unique way. <br />
               <br />
               Over the years, we have been fortunate enough to discover a true passion for photography and explore it on a daily basis. Colors, nature, and the street are prominent themes in our work.
             </p>

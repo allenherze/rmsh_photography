@@ -1,11 +1,11 @@
 .navcontainer {
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  color: var(--white-color);
-  padding: 1rem 2rem ;
+  color: var(--neutral-color);
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -31,6 +31,10 @@
 
 
 @media only screen and (max-width:576px) and (orientation:portrait) {
+  .navcontainer {
+    max-width: 100%;
+  }
+
   .navlinks {
     transition: height 600ms cubic-bezier(.17,.67,1,.28);
     justify-content: center;

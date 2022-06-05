@@ -13,7 +13,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background: url('/backgroundB.png') repeat-y center;
 }
 
 * {
@@ -33,9 +32,28 @@ a {
 }
 
 
+.modal {
+  margin: auto;
+  width: 100%;
+  height: 50vh;
+  background: url('/photo.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--neutral-color);
+}
+
+.overlay {
+  background:rgba(0,0,0, 0.3);
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+}
+
 .quoteHeader {
   text-align: center;
   font-size: 2.25rem;
+  max-width: 700px;
+  margin: auto;
 }
 
 .footer {
@@ -64,5 +82,11 @@ a {
   }
   .quoteHeader {
     font-size: 1.5rem;
+  }
+
+  .footer {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
   }
 }

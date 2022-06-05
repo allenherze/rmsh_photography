@@ -24,7 +24,8 @@ export default function Navbar() {
     <nav className={navbar.navcontainer}>
       <Link href='/'>
         <div>
-          <Image alt='Joshua Coutinho Logo' className={navbar.logo} src='/logo.svg' width='100%' height='100%' objectFit='contain' />
+          <Image alt='Visual Crate Logo' className={navbar.logo} src='/logo.svg' width='100%' height='100%' />
+          {/* <img src='/logo.svg' alt='visual crate logo' srcset='' className={navbar.logo} /> */}
         </div>
       </Link>
       <div className={navbar.icon} onClick={navOpen}>

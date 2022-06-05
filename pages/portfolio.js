@@ -14,23 +14,24 @@ const portfolio = ({ images }) => {
         <script src='https://kit.fontawesome.com/84047fdc96.js' crossOrigin='anonymous'></script>
       </Head>
 
-      <Navbar />
-      <div id={portfolioStyles.portfolio}>
+      <div className={portfolioStyles.headerContainer}>
+        <Navbar />
         <div className={portfolioStyles.header}>
           <h1>Moments are meant to be captured, and that is what we intend to do. Hope you like them</h1>
         </div>
-        <div id={portfolioStyles.portfolio}>
-          <div className={portfolioStyles.images}>
-            {images.map((image) => {
-              return (
-                <div className={portfolioStyles.image} key={image.id}>
-                  <a href={image.image} target='_blank' rel='noopener noreferrer' className={portfolioStyles.expand}>
-                    <Image src={image.image} alt='Image' width={image.width} height={image.height} objectFit='contain' />
-                  </a>
-                </div>
-              );
-            })}
-          </div>
+      </div>
+      {/* Header end */}
+      <div id={portfolioStyles.portfolio}>
+        <div className={portfolioStyles.images}>
+          {images.map((image) => {
+            return (
+              <div className={portfolioStyles.image} key={image.id}>
+                <a href={image.image} target='_blank' rel='noopener noreferrer' className={portfolioStyles.expand}>
+                  <Image src={image.image} alt='Image' width={image.width} height={image.height} objectFit='contain' />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className='footer'>
