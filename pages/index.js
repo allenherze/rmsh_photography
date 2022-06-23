@@ -55,7 +55,7 @@ export default function Home({ images }) {
 
 export async function getStaticProps() {
   const params = {
-    expression: 'folder="test"',
+    expression: 'folder="Upload"',
   };
   const paramString = Object.keys(params)
     .map((key) => `${key}=${encodeURIComponent(params[key])}`)
